@@ -8,7 +8,7 @@ typedef struct tree_type{
 tree *create(int num)
 {
   tree *temp;
-  temp=malloc(sizeof(tree));
+  temp=(tree *)malloc(sizeof(tree));
   temp->info=num;
   temp->left=NULL;
   temp->right=NULL;
